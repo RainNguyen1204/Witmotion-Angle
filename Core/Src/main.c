@@ -59,7 +59,6 @@ static void MX_USART1_UART_Init(void);
 #include "stdio.h"
 #include "WIT.h"
 uint8_t data_rx;
-//float x;
 Angle_ReadTypeDef angle_test;
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
@@ -114,7 +113,7 @@ int main(void)
   {
 	  WIT_Reset_Zero(&huart1);
 	  WIT_Data_Process(&angle_test);
-//	  x = angle_test->x;
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
